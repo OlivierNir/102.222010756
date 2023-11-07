@@ -1,4 +1,4 @@
-// java program to compute coumpound interest.
+// java program to compute coumpound interest using method and object.
 public class BobPay  
  {  
     public static double monthly(double principal,double rate,double time,double n){
