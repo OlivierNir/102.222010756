@@ -1,13 +1,14 @@
-class A{  
+class A extends B implements E{
+    void leterE(){System.out.println("E");}
 void primary(){System.out.println("Nyarubande");}  
 }  
-class B extends A{  
+class D{  
 void olevel(){System.out.println("Burema");}  
 }  
-class C extends B{  
+class C extends D{  
 void alevel(){System.out.println("Rukozo");}  
 } 
-class D extends C{
+class B extends C{
     void university(){System.out.println("Rukozo");}
 } 
 public interface E { void leterE(){System.out.println("E");}
@@ -15,7 +16,7 @@ public interface E { void leterE(){System.out.println("E");}
 public class 
 class TestInheritance2{  
 public static void main(String args[]){  
-D d=new D();  
+A d=new A();  
 d.primary();  
 d.olevel();  
 d.alevel();
